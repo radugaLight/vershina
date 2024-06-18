@@ -1,0 +1,118 @@
+<header class="header">
+  <div class="navigation">
+    <nav class="desk-nav">
+      <div class="flex gap-6 text-14med text-gray30 items-center">
+        <a href="/" class="hover:text-white transition-colors">Главная</a>
+        <a href="/contacts/" class="hover:text-white transition-colors"
+          >Контакты</a
+        >
+        <a href="/about/" class="hover:text-white transition-colors">О нас</a>
+        <a href="/axo/" class="hover:text-white transition-colors">Решения</a>
+      </div>
+      <div class="flex gap-2 items-center">
+        <a
+          href="/"
+          class="button button--secondary !px-[1.125rem]"
+          data-modal="modalForm"
+        >
+          <span> Связаться </span>
+        </a>
+        <a href="/" class="button button--primary">
+          <span> Каталог </span>
+        </a>
+      </div>
+    </nav>
+    <div class="mob-nav">
+      <a
+        href="#"
+        data-modal="mobileNav"
+        data-modal-transition="0"
+        class="rounded-xl flex items-center justify-center w-10 h-10 bg-black80 mobilenav-toggler"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 6.33325H14"
+            stroke="#DFDFEC"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2 9.66675H14"
+            stroke="#DFDFEC"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+      <a href="/" class="button button--primary">
+        <span> Каталог </span>
+      </a>
+    </div>
+  </div>
+</header>
+<div class="modal sm:!hidden" id="mobileNav">
+  <div class="fixed-nav theme-dark">
+    <div class="fixed-nav-rounded-div">
+      <div class="rounded-div-wrap">
+        <div class="rounded-div"></div>
+      </div>
+    </div>
+    <div class="fixed-nav-inner">
+      <div class="nav-row">
+        <h5>Основное</h5>
+        <ul class="links-wrap">
+          <li class="btn btn-link active">
+            <a href="index.html" class="btn-click magnetic">
+              <span class="btn-text">
+                <span class="btn-text-inner">Главная</span>
+              </span>
+            </a>
+          </li>
+          <li class="btn btn-link active">
+            <a href="index.html" class="btn-click magnetic">
+              <span class="btn-text">
+                <span class="btn-text-inner">Решения</span>
+              </span>
+            </a>
+          </li>
+          <li class="btn btn-link">
+            <a href="work.html" class="btn-click magnetic">
+              <span class="btn-text">
+                <span class="btn-text-inner">Что то еще</span>
+              </span>
+            </a>
+          </li>
+          <li class="btn btn-link">
+            <a href="about.html" class="btn-click magnetic">
+              <span class="btn-text">
+                <span class="btn-text-inner">Контакты</span>
+              </span>
+            </a>
+          </li>
+          <li class="btn btn-link">
+            <a href="contact.html" class="btn-click magnetic">
+              <span class="btn-text">
+                <span class="btn-text-inner">О нас</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="socials">
+        <a href="/" class="mb-1">Privacy Policy</a>
+        <a href="/" class="mb-10">Terms & Conditions</a>
+        <div class="socials__row">
+          <a href="/">VKontakte</a>
+          <a href="/">Ya.Dzen</a>
+          <a href="/">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

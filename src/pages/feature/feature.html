@@ -1,0 +1,288 @@
+<section class="current-work sticky-container overflow-hidden">
+  <div class="sticky-container__el">
+    <div class="h-screen flex relative container " id="CatalogOporaAnimation">
+      <div class="m-auto text-center relative z-20">
+        <h2 class="text-24med sm:text-40med mb-2 sm:mb-4">
+          Algo is a data-visualization
+        </h2>
+        <p class="text-14reg sm:text-17med text-[#b9b9b9] max-w-[23.75rem] mx-auto">
+          Algo is a data-visualization studio specializing in
+          <span class="text-gradient text-gradient-animation"
+            >video automation.</span
+          >
+        </p>
+      </div>
+      <div class=" absolute inset-0 catalog-opora-animation z-10 pointer-events-none">
+          <div class="catalog-item absolute">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+          </div>
+          <div class="catalog-item absolute  catalog-item--white">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+          </div>
+          <div class="catalog-item absolute">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+          </div>
+          <div class="catalog-item absolute catalog-item--white">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+          </div>
+          <div class="catalog-item absolute">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+          </div>
+          <div class="catalog-item absolute">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+          </div>
+          <div id="CatalogOporaAnimationTargetMain" class="absolute">
+            <div class="catalog-item  catalog-item--white xl:invisible" >
+              <div class="catalog-item__img">
+                <img src="img/cat.webp" alt="" />
+                <span class="catalog-item__btn"> </span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden xl:block h-[150vh]" id="CatalogOporaAnimationTrigger">
+  </div>
+  <div class="xl:h-screen flex">
+    <div class="bg-black100 relative z-30 mx-auto xl:my-auto  w-full sm:w-fit rounded-3xl">
+      <div
+        class=" w-full sm:w-fit default-background px-5 py-6 sm:px-10 sm:pb-10 sm:pt-8 "
+      >
+        <div class="text-center">
+          <h2 class="text-17med sm:text-27med mb-2 sm:mb-1">
+            Algo is a data-visualization
+          </h2>
+          <p
+            class="text-14reg sm:text-17med text-gradient text-gradient-animation mx-auto"
+          >
+            Более 1000 вариаций опор
+          </p>
+        </div>
+        
+        <a
+          href="/"
+          class="button button--primary w-fit mx-auto mt-6 mb-8 md:mt-8 md:mb-10"
+        >
+          <span>Catalouge</span>
+        </a>
+        <div
+          class="gap-6 grid grid-cols-[280px] justify-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-10"
+        >
+         
+           <a href="/" class="catalog-item catalog-item--white" id="CatalogOporaAnimationTarget">
+             <div class="catalog-item__img-container">
+               <div class="catalog-item__img">
+                 <img src="img/cat.webp" alt="" />
+                 <span class="catalog-item__btn"> </span>
+               </div>
+             </div>
+             <div class="catalog-item__text">
+               <p>ZIG12-02</p>
+               <p>Модификация уличной опоры</p>
+             </div>
+           </a>
+         
+          <a href="/" class="catalog-item catalog-item--white">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+            <div class="catalog-item__text">
+              <p>ZIG12-02</p>
+              <p>Модификация уличной опоры</p>
+            </div>
+          </a>
+          <a href="/" class="catalog-item catalog-item--white">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+            <div class="catalog-item__text">
+              <p>ZIG12-02</p>
+              <p>Модификация уличной опоры</p>
+            </div>
+          </a>
+          <a href="/" class="catalog-item catalog-item--white">
+            <div class="catalog-item__img">
+              <img src="img/cat.webp" alt="" />
+              <span class="catalog-item__btn"> </span>
+            </div>
+            <div class="catalog-item__text">
+              <p>ZIG12-02</p>
+              <p>Модификация уличной опоры</p>
+            </div>
+          </a>
+        </div>
+      </div>
+     </div>
+  </div>
+ </section>
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if(isDesktop){
+    const catalogOporaAnimation = document.getElementById('CatalogOporaAnimation'),
+          catalogOporaTrigger = document.getElementById('CatalogOporaAnimationTrigger'),
+          catalogOporaTarget = document.getElementById('CatalogOporaAnimationTarget'),
+          catalogOporaTargetImg = document.querySelector('#CatalogOporaAnimationTarget .catalog-item__img-container .catalog-item__img'),
+          catalogOporaTargetImgContainer = document.querySelector('#CatalogOporaAnimationTarget .catalog-item__img-container'),
+          catalogOporaTargetText = document.querySelector('#CatalogOporaAnimationTarget .catalog-item__text'),
+          catalogOporaAnimationTargetMain = document.querySelector('#CatalogOporaAnimationTargetMain .catalog-item'),
+          catalogOporaImages = gsap.utils.toArray('.catalog-opora-animation > .catalog-item > .catalog-item__img'),
+          catalogOporaImagesBoost = [0.05, 0.07, 0.03, 0.03, 0.065,  0.06]
+
+      catalogOporaTargetImgContainer.classList.add('disabled-default-animation')
+
+          
+      let scrollOffset = 0,
+        mouseX = 0,
+        mouseY = 0
+      
+      lockScroll.on('scroll', ({scroll}) => {
+        scrollOffset = scroll.y
+      })
+
+      window.onmousemove = function(e) {
+        mouseX = (e.clientX - (window.innerWidth / 2)),
+        mouseY = (e.clientY - (window.innerHeight / 2))
+
+        catalogOporaImages.forEach((el, i) => {
+          gsap.to(el, {
+            y: mouseY  * catalogOporaImagesBoost[i],
+            x: mouseX * catalogOporaImagesBoost[i]
+          })
+        })
+
+        if(catalogOporaTargetImgContainer.classList.contains('disabled-default-animation')) {
+          gsap.to(catalogOporaTargetImg, {
+            y: mouseY  * 0.03,
+            x: mouseX * 0.03
+          })
+        }
+
+        // catalogOporaImages[0].style.transform = `translate(${mouseX * 0.045}px, ${mouseY  * 0.045}px)`
+        // catalogOporaImages[1].style.transform = `translate(${mouseX * 0.060}px, ${mouseY  * 0.060}px)`
+        // catalogOporaImages[2].style.transform = `translate(${mouseX * 0.055}px, ${mouseY  * 0.055}px)`
+        // catalogOporaImages[3].style.transform = `translate(${mouseX * 0.045}px, ${mouseY  * 0.045}px)`
+        // catalogOporaImages[4].style.transform = `translate(${mouseX * 0.060}px, ${mouseY  * 0.060}px)`
+        // catalogOporaImages[5].style.transform = `translate(${mouseX * 0.030}px, ${mouseY  * 0.030}px)`
+        // catalogOporaImages[6].style.transform = `translate(${e.clientX * 0.50}px, ${e.clientY * 0.050}px)`
+        // catalogOporaImages[7].style.transform = `translate(${e.clientX * 0.60}px, ${e.clientY * 0.060}px)`
+        // catalogOporaImages[5].style.transform = `translate(${e.clientX * 30 * this.tweenParams.amountMultiplier}px, ${-e.clientY * 30 * this.tweenParams.amountMultiplier}px)`
+        // catalogOporaImages[8].style.transform = `translate(${e.clientX * 60}px, ${-e.clientY * 60}px)`
+      }
+
+
+      const catalogTl = gsap.timeline()
+
+
+      catalogTl.to(catalogOporaAnimation, {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: catalogOporaTrigger,
+          start: 'top bottom',
+          end: 'bottom center',
+          scrub: true,
+        },
+      })
+
+
+      
+
+
+      catalogTl.fromTo(catalogOporaTargetImgContainer, {
+        y: () => (catalogOporaAnimationTargetMain.getBoundingClientRect().top)  - catalogOporaTarget.getBoundingClientRect().top + scrollOffset,
+        x: () => catalogOporaAnimationTargetMain.getBoundingClientRect().left - catalogOporaTarget.getBoundingClientRect().left,
+        scale: () => catalogOporaAnimationTargetMain.clientWidth / catalogOporaTarget.clientWidth
+      }, {
+        y: () => (catalogOporaTrigger.getBoundingClientRect().top  + scrollOffset) + (catalogOporaTrigger.clientHeight / 2)  - (catalogOporaTarget.getBoundingClientRect().top  + scrollOffset) - catalogOporaTargetImgContainer.clientHeight / 2,
+        x: () => window.innerWidth / 2 - catalogOporaTarget.getBoundingClientRect().left - catalogOporaTargetImgContainer.clientWidth / 2,
+        scale: 1,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: catalogOporaTrigger,
+          start: 'top bottom',
+          end: 'center center',
+          scrub: true,
+        },
+      })
+
+      catalogTl.fromTo(catalogOporaTargetImgContainer, 
+      {
+        y: () => (catalogOporaTrigger.getBoundingClientRect().top  + scrollOffset) + (catalogOporaTrigger.clientHeight / 2)  - (catalogOporaTarget.getBoundingClientRect().top  + scrollOffset) - catalogOporaTargetImgContainer.clientHeight / 2,
+        x: () => window.innerWidth / 2 - catalogOporaTarget.getBoundingClientRect().left - catalogOporaTargetImgContainer.clientWidth / 2
+      }, 
+      {
+        // y: () => (catalogOporaTrigger.getBoundingClientRect().top  + scrollOffset) + catalogOporaTrigger.clientHeight  - (catalogOporaTarget.getBoundingClientRect().top  + scrollOffset) - catalogOporaTargetImgContainer.clientHeight / 2,
+        y: 0,
+        x: 0,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: catalogOporaTrigger,
+          start: 'center center',
+          end: 'bottom 15%',
+          scrub: true,
+          onEnterBack: function () {
+            catalogOporaTargetImgContainer.classList.add('disabled-default-animation')
+          },
+        },
+        onComplete: () => {
+          catalogOporaTargetImgContainer.classList.remove('disabled-default-animation')
+        },
+        
+      }, '>')
+
+      gsap.fromTo(catalogOporaTargetText,{opacity: 0}, {
+        opacity: 1,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: catalogOporaTrigger,
+          start: 'bottom 15%',
+          toggleActions: "restart none none reverse"
+        },
+      })
+
+      // catalogTl.fromTo(catalogOporaTargetImgContainer, {
+      //   y: () => (catalogOporaTrigger.getBoundingClientRect().top  + scrollOffset) + catalogOporaTrigger.clientHeight  - (catalogOporaTarget.getBoundingClientRect().top  + scrollOffset) - catalogOporaTargetImgContainer.clientHeight / 2,
+      //   x: () => window.innerWidth / 2 - catalogOporaTarget.getBoundingClientRect().left - catalogOporaTargetImgContainer.clientWidth / 2,
+      // }, {
+      //   y: 0,
+      //   x: 0, 
+      //   ease: "none", 
+      //   scrollTrigger: {
+      //     trigger: catalogOporaTrigger,
+      //     start: 'bottom 75%',
+      //     end: 'bottom 15%',
+      //     scrub: true,
+      //   },
+      // }, '>')
+
+
+      catalogTl.set(catalogOporaTargetImgContainer, {
+        y: () => (catalogOporaAnimationTargetMain.getBoundingClientRect().top)  - catalogOporaTarget.getBoundingClientRect().top + scrollOffset,
+        x: () => catalogOporaAnimationTargetMain.getBoundingClientRect().left - catalogOporaTarget.getBoundingClientRect().left,
+        scale: () => catalogOporaAnimationTargetMain.clientWidth / catalogOporaTarget.clientWidth
+      })
+
+    }
+  })
+ </script>

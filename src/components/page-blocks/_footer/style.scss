@@ -1,0 +1,19 @@
+.footer {
+  @apply bg-black90 border border-black80 pt-12 lg:pt-16 fixed bottom-0 w-full;
+  z-index: 10;
+  &__wordmark {
+    margin-top: 5.07875rem;
+  }
+}
+
+.fake-footer {
+  margin-top: auto;
+}
+
+@screen sm {
+  .footer {
+    &__wordmark {
+      margin-top: 8.88625rem;
+    }
+  }
+}
