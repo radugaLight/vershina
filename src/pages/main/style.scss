@@ -110,7 +110,7 @@
   opacity: var(--CardsBorderOpacity);
   border-radius: var(--CardsBorderRadius);
 
-  animation: 2s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite sceneRotate;
+  animation: 4s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite sceneRotate;
 
   @keyframes sceneRotate {
     0% {--sceneContentBack: 0deg};
