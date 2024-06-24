@@ -177,10 +177,15 @@
     z-index: 11 !important;
   }
 
-  #singleOporaSlider {
-    @apply will-change-transform h-full;
+  #singleOporaBlock {
+    @apply h-screen flex;
+    // will-change: transform;
     touch-action: pan-y;
     padding: min(27.77777777777778vw, 6rem) 0 min(15.55555555555556vw, 3.5rem);
+
+    .single-el__list {
+      height: -webkit-fill-available;
+    }
 
     @screen sm {
       @apply pt-24  pb-14;
@@ -208,12 +213,62 @@
     }
   }
 
-  .swiper-slide {
-    @apply transition-opacity;
-    opacity: 0 !important;
-      &.swiper-slide-active {
-        opacity: 1 !important;
+  #singleOporaTextSlider {
+    overflow: visible;
+    @apply max-w-full min-w-0;
+    .swiper-slide {
+      @apply  max-w-full min-w-0;
+
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      transition-delay: 300ms;
+      opacity: 0 !important;
+      h2, p {
+        transition-property: filter, -webkit-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+        filter: blur(10.199999809265137px);;
       }
+      p {
+        filter: blur(15.199999809265137px);
+      }
+        &.swiper-slide-active {
+          opacity: 1 !important;
+          transition-delay: 0ms;
+          h2, p {
+            filter: blur(0px);
+          }
+        }
+    }
+  }
+
+
+  #singleOporaImgSlider {
+    overflow: visible;
+    touch-action: pan-y;
+    @apply max-h-full min-h-0 max-w-full min-w-0;
+    .swiper-wrapper {
+      @apply max-h-full;
+      height: 100%;
+      .swiper-slide {
+        @apply max-h-full min-h-0  max-w-full min-w-0;
+        height: fit-content !important;
+        img {
+          transition-property: filter, -webkit-filter, opacity;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 400ms;
+          opacity: 0 !important;
+          filter: blur(14.800000190734863px);
+        }
+        &.swiper-slide-active{
+          img {
+            opacity: 1 !important;
+            filter: blur(0px);
+          }
+        }
+      }
+    }
   }
 }
 

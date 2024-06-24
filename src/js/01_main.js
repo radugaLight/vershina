@@ -319,4 +319,3 @@ const documentHeight = () => {
 
 documentHeight();
 window.addEventListener("resize", documentHeight);
-
