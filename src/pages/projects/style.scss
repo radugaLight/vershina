@@ -1,0 +1,78 @@
+.main__first-block {
+    & > div {
+        --bgimg: url("https://svet-expert.com/bitrix/templates/vershina/img/main-firstblock.webp");
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 74.98%, #000 100%), center/cover no-repeat var(--bgimg);
+        border-radius: 0px 0px 1.25rem 1.25rem;
+        overflow: hidden;
+    }
+}
+
+#aboutPagingation {
+    .swiper-pagination-bullet-active {
+        opacity: 0.6;
+    }
+}
+
+.project-block {
+    @apply text-black100 text-14reg sm:text-17reg mb-10 sm:mb-7;
+
+    h3 {
+        @apply text-white text-20med sm:text-22med;
+    }
+}
+
+.prioject-charasteristic {
+    @apply py-4 border-y border-black800 sm:py-8 flex flex-col gap-y-4 sm:gap-y-6 lg:grid grid-cols-5 lg:gap-x-5;
+    
+    .item {
+        @apply flex flex-col gap-1;
+       
+        &__header {
+            @apply text-14reg text-black400;
+        }
+
+        &__desk {
+            @apply text-14reg sm:text-16reg;
+        }
+
+        &__row {
+            @apply grid grid-cols-4 gap-5 lg:grid-cols-5 lg:col-span-5;
+
+            .item:first-child {
+                @apply col-span-2 lg:col-span-3;
+            }
+
+            .item:last-child {
+                @apply col-span-2;
+            }
+        }
+    }
+
+    & > *:not(:last-child){
+        @apply border-b border-black800 pb-4 lg:border-b-0;
+    }
+
+    & > .item:nth-child(2),
+    & > .item:nth-child(5) {
+        @apply lg:col-span-3 lg:max-w-[348px];
+    }
+
+    & > .item:nth-child(3),
+    & > .item:nth-child(6) {
+        @apply lg:col-span-2 ;
+    }
+}
+
+@screen sm {
+    .main__first-block {
+        & > div {
+            --bgimg: url("https://svet-expert.com/bitrix/templates/vershina/img/main-firstblock--desk.webp");
+        }
+    }
+
+    // .prioject-charasteristic {
+    //     .item__row {
+    //         @apply ;
+    //     }
+    // }
+}

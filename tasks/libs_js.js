@@ -1,9 +1,7 @@
 const plugins = [
-  "node_modules/locomotive-scroll/dist/locomotive-scroll.min.js",
-  "node_modules/gsap/dist/gsap.min.js",
-  "node_modules/gsap/dist/ScrollTrigger.min.js",
   "src/js/swiper.min.js",
-  "src/js/debounce.min.js",
+  'node_modules/imask/dist/imask.min.js',
+  'node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js',
 ];
 
 const { src, dest } = require("gulp");

@@ -1,58 +1,43 @@
 <header class="header">
   <div class="navigation">
-    <nav class="desk-nav">
-      <div class="flex gap-6 text-14med text-gray30 items-center">
-        <a href="/" class="hover:text-white transition-colors">Главная</a>
-        <a href="/contacts/" class="hover:text-white transition-colors"
-          >Контакты</a
-        >
-        <a href="/about/" class="hover:text-white transition-colors">О нас</a>
-        <a href="/axo/" class="hover:text-white transition-colors">Решения</a>
-      </div>
-      <div class="flex gap-2 items-center">
-        <a
-          href="/"
-          class="button button--secondary !px-[1.125rem]"
-          data-modal="modalForm"
-        >
-          <span> Связаться </span>
-        </a>
-        <a href="/" class="button button--primary">
-          <span> Каталог </span>
+    <nav class="desk-nav container hidden sm:flex justify-between items-start">
+      <a href="/">
+        <svg width="51" height="26" viewBox="0 0 51 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M50.1601 25.9322C50.8513 25.9322 51.2456 25.1399 50.8303 24.5854L32.6717 0.335916C32.3336 -0.115537 31.6571 -0.111224 31.3248 0.344504L18.7407 17.6019C18.0657 18.5276 16.6859 18.5191 16.0222 17.5852L11.5549 11.2991C11.2264 10.8368 10.5453 10.8271 10.2038 11.2799L0.1714 24.5831C-0.246538 25.1373 0.147377 25.9322 0.839944 25.9322H9.59905C11.217 25.9322 12.7556 25.2286 13.8172 24.0032L16.1089 21.3579C16.7759 20.5881 17.9664 20.586 18.636 21.3535L20.9607 24.018C22.0221 25.2345 23.5549 25.9322 25.1661 25.9322H50.1601Z" fill="white"/>
+        </svg>
+      </a>
+      <div class="h-full flex items-center gap-8 lg:gap-[5.75rem]">
+        <ul class="flex items-center gap-8 text-15semi">
+          <li><a href="/">Направления</a></li>
+          <li><a href="/">О компании</a></li>
+          <li><a href="/">Проекты</a></li>
+          <li><a href="/">Контакты</a></li>
+        </ul>
+        <a href="/" class="button button-primary">
+          <span>Связаться</span>
         </a>
       </div>
     </nav>
     <div class="mob-nav">
+      <a href="/">
+        <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M40.3248 21.0762C40.8805 21.0762 41.1974 20.4346 40.8636 19.9855L26.2655 0.348198C25.9937 -0.0173906 25.4499 -0.0138975 25.1827 0.355152L15.066 14.3303C14.5234 15.0799 13.4141 15.073 12.8806 14.3168L9.28927 9.22621C9.02515 8.85184 8.47756 8.84399 8.20305 9.21066L0.137792 19.9837C-0.198197 20.4324 0.11848 21.0762 0.675249 21.0762H7.71688C9.01762 21.0762 10.2545 20.5064 11.108 19.5141L12.9503 17.3719C13.4865 16.7485 14.4436 16.7468 14.9819 17.3683L16.8508 19.5261C17.704 20.5112 18.9363 21.0762 20.2315 21.0762H40.3248Z" fill="white"/>
+        </svg>
+      </a>
+        
       <a
         href="#"
         data-modal="mobileNav"
         data-modal-transition="0"
-        class="rounded-xl flex items-center justify-center w-10 h-10 bg-black80 mobilenav-toggler"
+        class="rounded-full flex items-center justify-center  mobilenav-toggler py-2 px-4 border border-white border-opacity-25 bg-white bg-opacity-5"
       >
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2 6.33325H14"
-            stroke="#DFDFEC"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M2 9.66675H14"
-            stroke="#DFDFEC"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.49902 4.36523H17.499" stroke="white" stroke-width="1.25551" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2.49902 8.57422H17.499" stroke="white" stroke-width="1.25551" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2.49902 12.7871H17.499" stroke="white" stroke-width="1.25551" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </a>
-      <a href="/" class="button button--primary">
-        <span> Каталог </span>
-      </a>
+      
     </div>
   </div>
 </header>

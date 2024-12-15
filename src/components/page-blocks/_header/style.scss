@@ -16,16 +16,10 @@
 }
 
 .navigation {
-  @apply flex fixed w-full pt-5 sm:pt-10;
+  @apply flex absolute w-full pt-4 sm:pt-8;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-
-  .desk-nav {
-    @apply gap-6 mx-auto h-12 hidden sm:flex items-center bg-black80;
-    border-radius: 1.1875rem;
-    padding: 0 0.3125rem 0 1.5rem;
-  }
 
   .mob-nav {
     @apply flex sm:hidden items-center justify-between gap-6 px-5 w-full;
@@ -34,18 +28,22 @@
   .mobilenav-toggler {
     svg {
       path {
-        @apply transition-transform;
+        @apply transition-all;
       }
     }
     &.active-modal-button {
       svg {
         path {
           &:first-child {
-            transform: rotate(45deg) translate(2.5px, -7px);
+            transform: rotate(45deg) translate(4px,-5px);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
           }
 
           &:last-child {
-            transform: rotate(-45deg) translate(-7.5px, 1px);
+            transform: rotate(-45deg) translate(-9.5px,1px);
           }
         }
       }
@@ -56,7 +54,7 @@
 /* ------------------------- Fixed Nav -------------------------------------------------- */
 
 .fixed-nav {
-  @apply bg-black90;
+  @apply bg-blackBlue;
   position: fixed;
   right: 0;
   top: 0;
@@ -75,7 +73,7 @@
   padding: 140px 20px 32px;
   position: relative;
   transform: translate(0, 0) rotate(0.001deg);
-  transition: all 0.6s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.7, 0, 0.2, 1);
   transform: translate(20vw, 0) rotate(0.001deg);
   transition-delay: 0s;
 }
@@ -87,7 +85,7 @@
 }
 
 .fixed-nav .nav-row h5 {
-  @apply text-16reg text-gray60 mb-2;
+  @apply text-16reg mb-2;
 }
 
 .fixed-nav .nav-row ul {
@@ -104,6 +102,7 @@
 }
 
 .fixed-nav-rounded-div {
+  @apply bg-blackBlue;
   position: absolute;
   left: 1px;
   transform: translateX(-100%);
@@ -123,7 +122,6 @@
 }
 
 .fixed-nav-rounded-div .rounded-div-wrap .rounded-div {
-  @apply bg-black90;
   height: 150%;
   content: "";
   display: block;
@@ -233,7 +231,7 @@
 
 .socials {
   a {
-    @apply text-16reg text-gray20 block;
+    @apply text-16reg block;
   }
 
   &__row {

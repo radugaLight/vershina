@@ -1,6 +1,7 @@
 const plugins = [
-  "node_modules/locomotive-scroll/dist/locomotive-scroll.min.css",
+  // "node_modules/locomotive-scroll/dist/locomotive-scroll.min.css",
   "node_modules/swiper/swiper.min.css",
+  'node_modules/@fancyapps/ui/dist/fancybox/fancybox.css'
 ];
 
 const { src, dest } = require("gulp");

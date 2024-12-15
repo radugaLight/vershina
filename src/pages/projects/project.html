@@ -1,0 +1,137 @@
+<!--  -->
+<div class="container mb-20 sm:mb-[8.75rem] sm:pt-36 " id="projectPage">
+    <div class="lg:grid grid-cols-12 lg:gap-x-5  mb-[88px] sm:mb-20">
+        <h1 class="text-32semi mb-3 lg:hidden ">
+            Название проекта 
+            в две строки
+        </h1>
+        <!--  -->
+        <div class="mb-10 lg:mb-0 col-span-6 col-start-1 row-start-1 w-full slider-pp relative rounded-2xl overflow-hidden">
+            <div class="buttons absolute bottom-5 right-5 flex items-center gap-1.5 z-10 ">
+                <div class="button-prev p-0.5 rounded-md backdrop-blur-sm w-fit bg-[rgba(57,_57,_57,_0.6)] [&.swiper-button-disabled]:opacity-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1801 3.37534C16.8351 2.94408 16.2058 2.87416 15.7746 3.21917L6.75065 10.4383C5.74983 11.239 5.74983 12.7611 6.75065 13.5618L15.7746 20.7809C16.2058 21.1259 16.8351 21.056 17.1801 20.6247C17.5251 20.1935 17.4552 19.5642 17.024 19.2192L8.00004 12L17.024 4.78091C17.4552 4.4359 17.5251 3.8066 17.1801 3.37534Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="button-next button-prev p-0.5 rounded-md backdrop-blur-sm w-fit bg-[rgba(57,_57,_57,_0.6)] [&.swiper-button-disabled]:opacity-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.21917 3.37534C6.56418 2.94408 7.19347 2.87416 7.62473 3.21917L16.6486 10.4383C17.6495 11.239 17.6495 12.7611 16.6486 13.5618L7.62473 20.7809C7.19347 21.1259 6.56418 21.056 6.21917 20.6247C5.87416 20.1935 5.94408 19.5642 6.37534 19.2192L15.3993 12L6.37534 4.78091C5.94408 4.4359 5.87416 3.8066 6.21917 3.37534Z" fill="white"/>
+                    </svg>
+                        
+                </div>
+            </div>
+            <div class="swiper h-full lg:max-h-[627px]" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://svet-expert.com/bitrix/templates/vershina/img/zag.webp" class="aspect-[320/245] rounded-2xl lg:aspect-auto h-full object-cover col-start-1 row-start-1 w-full" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://svet-expert.com/bitrix/templates/vershina/img/zag.webp" class="aspect-[320/245] rounded-2xl lg:aspect-auto h-full object-cover col-start-1 row-start-1 w-full" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://svet-expert.com/bitrix/templates/vershina/img/zag.webp" class="aspect-[320/245] rounded-2xl lg:aspect-auto h-full object-cover col-start-1 row-start-1 w-full" alt="">
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const sliderContainer = document.querySelector('#projectPage .slider-pp');
+                    
+                    const slider = new Swiper(sliderContainer.querySelector('.swiper'), {
+                        spaceBetween: 20,
+                        navigation: {
+                            prevEl: sliderContainer.querySelector('.button-prev'),
+                            nextEl: sliderContainer.querySelector('.button-next')
+                        }
+                    })
+
+                })
+            </script>
+        </div>
+        <!--  -->
+        <div class="col-span-6 flex flex-col justify-between">
+                    <div class="prioject-charasteristic">
+                        <div class="item__row">
+                            <div class="item">
+                                <span class="item__header">П/П</span>
+                                <span class="item__desk">01</span>
+                            </div>
+                            <div class="item">
+                                <span class="item__header">Состав работ</span>
+                                <span class="item__desk">Поставка/Монтаж</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="item__header">Название</span>
+                            <span class="item__desk">Управление делаими <br class="hidden sm:block"> правительства <br class="hidden sm:block">
+                                Нижегородской области</span>
+                        </div>
+                        <div class="item">
+                            <span class="item__header">Заключение / <br> Окончание</span>
+                            <span class="item__desk">12.12.2019 -- 24.12.2020</span>
+                        </div>
+                        <div class="item__row">
+                            <div class="item">
+                                <span class="item__header">Заказчик</span>
+                                <span class="item__desk">Нижний Новгород</span>
+                            </div>
+                            <div class="item">
+                                <span class="item__header">Стадия</span>
+                                <span class="item__desk">Исполнен</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="item__header">Наименование работ</span>
+                            <span class="item__desk">
+                                Выполнение работ по монтажу системы «Архитектурно-художественное освещение стен и башен Нижегородского
+                            </span>
+                        </div>
+                        <div class="item">
+                            <span class="item__header">Фз</span>
+                            <span class="item__desk">44</span>
+                        </div>
+                    </div>
+
+                    <a href="/" class="button button-primary w-fit mt-10 lg:mt-24 lg:ml-auto">
+                        <span>Связаться</span> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.27004 13.01C6.74004 12.74 6.15004 12.6 5.55004 12.6C0.870039 12.93 0.870039 19.74 5.55004 20.07H16.64C17.99 20.08 19.29 19.58 20.28 18.67C23.57 15.8 21.81 10.03 17.48 9.48C15.92 0.110001 2.39004 3.67 5.60004 12.6" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.8501 9.92001C16.3701 9.66001 16.9401 9.52001 17.5201 9.51001" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+            </div>
+    </div>
+    
+</div>
+<section class="mb-20 sm:mb-[8.75rem] bg-blackBlue">
+    <div class="container pt-[22px] pb-[42px] sm:py-16 lg:grid gap-5 grid-cols-12">
+        <div class="sm:max-w-[321px] col-span-4">
+            <h2 class="text-24semi2 sm:text-40semi mb-4 sm:mb-6">
+                Сотрудничество
+            </h2>
+            <p class="text-14reg sm:text-16reg mb-10 text-black200">Начни реализовывать проект прямо сейчас и получи консультацию бесплатно!</p>
+        </div>
+        <form action="" class="flex flex-col gap-[22px] col-span-8">
+            <input type="text" class="input w-full" placeholder="Имя">
+            <input type="text" class="input w-full" placeholder="Телефон">
+            <input type="text" class="input w-full" placeholder="Email">
+            <textarea type="text" class="textarea w-full" placeholder="Комментарий"></textarea>
+            <div class="grid lg:grid-cols-8 lg:gap-x-5">
+                <input class="checkbox row-start-4 w-0 h-0 invisible" type="checkbox" id="formCheckbox">
+                <label class="mb-6 inuput-checkbox row-start-2 lg:col-span-7 lg:row-start-1 lg:mt-[13px]" for="formCheckbox">
+                    <p class="text-12med text-black500 text-nowrap">Я согласен на <a href="" class="text-white"> обработку моих персональных данных</a>
+                    </p>
+                </label>
+                <button class="button button-primary row-start-2 lg:col-span-8">
+                    <span>Отправить</span>
+                </button>
+                <label  class="mb-6 row-start-1 h-fit w-fit flex cursor-pointer lg:col-start-8 lg:ml-auto lg:mt-2.5">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.9999 6.99996L8.49995 13.5C8.10212 13.8978 7.87863 14.4374 7.87863 15C7.87863 15.5626 8.10212 16.1021 8.49995 16.5C8.89777 16.8978 9.43734 17.1213 9.99995 17.1213C10.5626 17.1213 11.1021 16.8978 11.4999 16.5L17.9999 9.99996C18.7956 9.20432 19.2426 8.12518 19.2426 6.99996C19.2426 5.87475 18.7956 4.79561 17.9999 3.99996C17.2043 3.20432 16.1252 2.75732 14.9999 2.75732C13.8747 2.75732 12.7956 3.20432 11.9999 3.99996L5.49995 10.5C4.30647 11.6934 3.63599 13.3121 3.63599 15C3.63599 16.6878 4.30647 18.3065 5.49995 19.5C6.69342 20.6934 8.31212 21.3639 9.99995 21.3639C11.6878 21.3639 13.3065 20.6934 14.4999 19.5L20.9999 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <input type="file" class="h-0 w-0">
+                </label>
+            </div>
+        </form>
+    </div>
+</section>
